@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import accordion from "./components/accordion";
+import Accordion from "./components/Accordion";
 
 function App() {
   return (
     <div className="App">
-      <accordion />
+      <Accordion />
     </div>
   );
 }
