@@ -1,0 +1,45 @@
+.multi-selection-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 25vw;
+  float: right;
+}
+
+.multi-selection-description {
+  font-family: "Raleway";
+  font-weight: 500;
+}
+
+.multi-selection-item {
+  background-color: green;
+  color: white;
+  font-size: 0.8em;
+  font-family: "Raleway", "Times New Roman";
+  margin: 2vh 0;
+  padding: 1vh;
+  width: 25vw;
+  border: 0.5em solid white;
+  cursor: pointer;
+}
+
+.multi-selection-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.multi-selection-span {
+  font-size: 1.6em;
+}
+
+.multi-selection-content {
+  display: flex;
+  justify-content: space-between;
+  color: burlywood;
+  align-items: left;
+  font-size: 1.2em;
+  font-family: "Raleway", "Times New Roman";
+  font-weight: 600;
+}
