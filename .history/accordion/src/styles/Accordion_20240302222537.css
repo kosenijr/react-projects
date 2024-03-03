@@ -1,0 +1,12 @@
+.wrapper {
+}
+.accordion {
+  color: white;
+}
+
+.item {
+  background-color: green;
+  height: 2em;
+  padding-bottom: 1em;
+  font-size: 1.5em;
+}

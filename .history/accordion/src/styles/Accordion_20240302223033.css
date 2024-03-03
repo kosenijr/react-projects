@@ -1,0 +1,19 @@
+.wrapper {
+}
+.accordion {
+  color: white;
+}
+
+.item {
+  background-color: green;
+  font: 1.5em Raleway;
+  /* height: 5em; */
+  padding-bottom: 1em;
+  width: 50vw;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  font: 1.5em bold Raleway;
+}

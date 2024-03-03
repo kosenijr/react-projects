@@ -1,0 +1,23 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw
+}
+.accordion {
+  color: white;
+
+}
+
+.item {
+  background-color: green;
+  font-size: 1.5em;
+  font-family: "Times New Roman";
+  
+  padding-bottom: 1vh;
+  width: 50vw;
+}
+
+.content {
+  font-size: 1.2em;
+  font-family:  "Raleway", "Times New Roman";
+  font-weight: 700;
+}
