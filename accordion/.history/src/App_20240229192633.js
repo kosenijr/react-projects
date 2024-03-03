@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import SingleSelection from "./components/SingleSelection";
+import Accordion from "./components/Accordion";
 
 function App() {
   return (
     <div className="App">
-      <SingleSelection />
+      <Accordion />
     </div>
   );
 }
