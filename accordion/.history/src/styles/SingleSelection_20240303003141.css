@@ -37,9 +37,6 @@ span {
 
 .content {
   display: flex;
-  justify-content: space-between;
-  color: burlywood;
-  align-items: left;
   font-size: 1.2em;
   font-family:  "Raleway", "Times New Roman";
   font-weight: 600;

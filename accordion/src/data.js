@@ -1,30 +1,26 @@
 const data = [
   {
     id: 1,
-    question: "How are you?",
-    answer: "I am well!",
-    jargon: "Utilizing a microservices architecture with containerization via Kubernetes orchestration, our DevOps team employs continuous integration and delivery pipelines to streamline software deployment workflows."
+    question: "Why don't programmers like nature?",
+    answer: "It has too many bugs!",
   },
 
   {
     id: 2,
-    question: "Where were you raised?",
-    answer: "I was raised in Queens.",
-    jargon: "Utilizing a microservices architecture with containerization via Kubernetes orchestration, our DevOps team employs continuous integration and delivery pipelines to streamline software deployment workflows."
+    question: "Why did the computer get cold?",
+    answer: "It left its Windows open.",
   },
 
   {
     id: 3,
-    question: "What is one of your favorite movies?",
-    answer: "Harlem Nights",
-    jargon: "Utilizing a microservices architecture with containerization via Kubernetes orchestration, our DevOps team employs continuous integration and delivery pipelines to streamline software deployment workflows."
+    question: "Why did the programmers quit their jobs?",
+    answer: "Because they didn't get arrays!",
   },
 
   {
     id: 4,
-    question: "What is your favorite drink?",
-    answer: "Water",
-    jargon: "Utilizing a microservices architecture with containerization via Kubernetes orchestration, our DevOps team employs continuous integration and delivery pipelines to streamline software deployment workflows."
+    question: "Why are Microsoft employees never relaxed?",
+    answer: "Because they're always on Edge.",
   },
 ];
 

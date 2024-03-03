@@ -23,12 +23,16 @@
   width: 40vw;
   border: 0.5em solid white;
   cursor: pointer;
-}
-
-.title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+}
+
+.title {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
 }
 
 span {
@@ -36,12 +40,8 @@ span {
 }
 
 .content {
-  display: flex;
-  justify-content: space-between;
-  color: burlywood;
-  align-items: left;
   font-size: 1.2em;
   font-family:  "Raleway", "Times New Roman";
   font-weight: 600;
-  
+
 }
