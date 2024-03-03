@@ -19,7 +19,7 @@ const data = [
 
   {
     id: 4,
-    question: "What is your favorite drink",
+    question: "What is your favorite drink?",
     answer: "Water",
   },
 ];
