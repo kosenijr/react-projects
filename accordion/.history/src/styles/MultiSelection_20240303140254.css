@@ -14,14 +14,11 @@ display: flex;
 justify-content: space-evenly;
 }
 
-.multi-enable-button {
+.multi-enable-utton {
     height:3vh;
     width: fit-conent;
     border-radius: 1em;
     cursor: pointer;
-    background-color: green;
-    color: white;
-    border: 0.1em solid white;
 }
 
 .multi-selection-item {

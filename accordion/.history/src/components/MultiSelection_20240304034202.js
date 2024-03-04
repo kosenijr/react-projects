@@ -24,7 +24,6 @@ function MultiSelection() {
       : copyMultiple.splice(copyMultiple.indexOf(getCurrentId), 1);
     // set state to new array
     setMultiple(copyMultiple);
-    console.log(multiple);
   };
 
   return (

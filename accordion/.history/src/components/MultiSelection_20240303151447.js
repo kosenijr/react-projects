@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/MultiSelection.css";
 import data from "../data";
-import { computeHeadingLevel } from "@testing-library/react";
 
 function MultiSelection() {
   // setting up useState.
@@ -15,16 +14,8 @@ function MultiSelection() {
     setSelected(selected !== getCurrentId ? getCurrentId : null);
   };
   const handleMultiSelection = (getCurrentId) => {
-    // copy prospective muliple elements into array and store
-    const copyMultiple = [...multiple];
-    console.log(copyMultiple.indexOf(getCurrentId)); // returns -1
-    // condition
-    copyMultiple.indexOf(getCurrentId) === -1
-      ? copyMultiple.push(getCurrentId)
-      : copyMultiple.splice(copyMultiple.indexOf(getCurrentId), 1);
-    // set state to new array
-    setMultiple(copyMultiple);
-    console.log(multiple);
+    // if value of selected equals getCurrentID, null; if otherwise, push into enable array
+    setEnableMultiSelection(selected === getCurrentId ? null : selected);
   };
 
   return (
@@ -34,24 +25,13 @@ function MultiSelection() {
         <h2 className="multi-selection-description">
           Multiple-Selection Accordion
         </h2>
-        <button
-          className="multi-enable-button"
-          onClick={() => setEnableMultiSelection(!enableMultiSelection)}
-        >
-          {enableMultiSelection
-            ? "Disable Multi-Selection"
-            : "Enable Multi-Selection"}
-        </button>
+        <button className="multi-enable-button">Enable Multiple Selection</button>
         {data && data.length > 0 ? (
           data.map((dataItem) => (
             <div
               className="multi-selection-item"
               key={dataItem.id}
-              onClick={
-                enableMultiSelection
-                  ? () => handleMultiSelection(dataItem.id)
-                  : () => handleSingleSelection(dataItem.id)
-              }
+              onClick={() => handleSingleSelection(dataItem.id)}
             >
               {/* always remember to add key */}
               <div className="multi-selection-title">

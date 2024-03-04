@@ -21,7 +21,9 @@ justify-content: space-evenly;
     cursor: pointer;
     background-color: green;
     color: white;
-    border: 0.1em solid white;
+    border: 0.5em solid white;
+
+  
 }
 
 .multi-selection-item {

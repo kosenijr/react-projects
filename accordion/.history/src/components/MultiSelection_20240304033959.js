@@ -19,12 +19,10 @@ function MultiSelection() {
     const copyMultiple = [...multiple];
     console.log(copyMultiple.indexOf(getCurrentId)); // returns -1
     // condition
-    copyMultiple.indexOf(getCurrentId) === -1
-      ? copyMultiple.push(getCurrentId)
-      : copyMultiple.splice(copyMultiple.indexOf(getCurrentId), 1);
+    copyMultiple.indexOf(getCurrentId) === -1 ? copyMultiple.push(getCurrentId) : copyMultiple.splice(copyMultiple.indexOf(getCurrentId), 1);
     // set state to new array
     setMultiple(copyMultiple);
-    console.log(multiple);
+    })
   };
 
   return (
