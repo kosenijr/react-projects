@@ -10,7 +10,9 @@ function MultiSelection() {
   const [multiple, setMultiple] = useState([]);
 
   // reset state
-  const handleReset = () => {
+  const handleReset = (getCurrentId) => {
+    getCurrentId = 0;
+    // setMultiple([]);
   };
   // setting up handling
   const handleSingleSelection = (getCurrentId) => {
@@ -20,7 +22,6 @@ function MultiSelection() {
     setSelected(selected !== getCurrentId ? getCurrentId : null);
   };
   const handleMultiSelection = (getCurrentId) => {
-    handleReset();
     // copy prospective muliple elements into array and store
     const copyMultiple = [...multiple];
     const indexOfCurrentId = copyMultiple.indexOf(getCurrentId); // returns -1

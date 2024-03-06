@@ -11,6 +11,8 @@ function MultiSelection() {
 
   // reset state
   const handleReset = () => {
+    setSelected(null);
+    setMultiple([]);
   };
   // setting up handling
   const handleSingleSelection = (getCurrentId) => {
@@ -33,10 +35,10 @@ function MultiSelection() {
     setMultiple(copyMultiple);
   };
 
-  // console.log(multiple);
+  console.log(multiple);
 
   return (
-    <div className="multi-selection-wrapper">
+    <div className="multi-selection-wrapper" onChange={() => handleReset()}>
       {/* Multi-Selection Accordion */}
       <div className="multi-selection-accordion">
         <h2 className="multi-selection-description">

@@ -28,7 +28,7 @@ function MultiSelection() {
     indexOfCurrentId === -1
       ? copyMultiple.push(getCurrentId)
       : copyMultiple.splice(copyMultiple.indexOf(getCurrentId), 1);
-
+      
     // set state to new array
     setMultiple(copyMultiple);
   };

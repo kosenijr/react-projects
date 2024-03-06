@@ -11,16 +11,19 @@ function MultiSelection() {
 
   // reset state
   const handleReset = () => {
+    setSelected(null);
+    // setMultiple([]);
   };
   // setting up handling
   const handleSingleSelection = (getCurrentId) => {
+    console.log(selected, getCurrentId);
     handleReset();
+    getCurrentId = 0;
     // console.log(selected, getCurrentId);
     // setSelected(getCurrentId === selected ? null : getCurrentId); // keep add condition for closure
     setSelected(selected !== getCurrentId ? getCurrentId : null);
   };
   const handleMultiSelection = (getCurrentId) => {
-    handleReset();
     // copy prospective muliple elements into array and store
     const copyMultiple = [...multiple];
     const indexOfCurrentId = copyMultiple.indexOf(getCurrentId); // returns -1

@@ -21,6 +21,7 @@ function MultiSelection() {
   };
   const handleMultiSelection = (getCurrentId) => {
     handleReset();
+    setSelected(null);
     // copy prospective muliple elements into array and store
     const copyMultiple = [...multiple];
     const indexOfCurrentId = copyMultiple.indexOf(getCurrentId); // returns -1

@@ -10,17 +10,19 @@ function MultiSelection() {
   const [multiple, setMultiple] = useState([]);
 
   // reset state
-  const handleReset = () => {
+  const handleReset = (getCurrentId) => {
+    getCurrentId = 0;
+    // setMultiple([]);
   };
   // setting up handling
   const handleSingleSelection = (getCurrentId) => {
+    console.log(selected, getCurrentId);
     handleReset();
     // console.log(selected, getCurrentId);
     // setSelected(getCurrentId === selected ? null : getCurrentId); // keep add condition for closure
     setSelected(selected !== getCurrentId ? getCurrentId : null);
   };
   const handleMultiSelection = (getCurrentId) => {
-    handleReset();
     // copy prospective muliple elements into array and store
     const copyMultiple = [...multiple];
     const indexOfCurrentId = copyMultiple.indexOf(getCurrentId); // returns -1
@@ -55,6 +57,7 @@ function MultiSelection() {
             <div
               className="multi-selection-item"
               key={dataItem.id}
+              onChange={() => handleReset()}
               onClick={
                 enableMultiSelection
                   ? () => handleMultiSelection(dataItem.id)
